@@ -1,3 +1,16 @@
+"""
+SGT.4.2_mft - Model Fine-Tuning on Target Dataset
+
+EXAMPLE USAGE:
+python 4.2_mft.py \
+    --model_name ./checkpoint/sgt_protected_model \
+    --data_path ./data/beavertails.json \
+    --output_path ./results/attacked_model \
+    --shots 100 \
+    --epochs 5 \
+    --lr 1e-5 \
+    --bf16
+"""
 import os
 import re
 import json
